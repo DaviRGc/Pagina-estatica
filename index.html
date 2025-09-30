@@ -14,40 +14,52 @@
       font-family: 'Bitcount Prop Single Ink', sans-serif;
     }
 
-
     .font-poppins {
       font-family: 'Poppins', sans-serif;
+    }
+
+    /* Animación de fadeIn para secciones */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-out forwards;
     }
   </style>
 </head>
 
 <body class="bg-gray-50 font-poppins">
-<div class="h-screen bg-gradient-to-t from-[#e30e0e] via-[#7a3e3e] to-[#1a1717] flex flex-col items-center justify-center text-center px-4">
+  <div class="min-h-screen bg-gradient-to-t from-[#e30e0e] via-[#7a3e3e] to-[#1a1717] flex flex-col items-center text-center px-4 pt-16 pb-16">
 
-<div id="perfil" class="flex flex-col items-center p-8 bg-black/60 font-bitcount rounded-3xl shadow-2xl border border-white/30">
-  <img src="./imagenes/yo.jpeg" alt="yo" class="w-44 h-44 rounded-full border-4 border-black shadow-xl mb-10 object-cover">
-  <h1 class="text-white text-6xl md:text-7xl font-bitcount mb-2 drop-shadow-lg">Toño Fox</h1>
-  <h2 class="text-white text-2xl md:text-3xl font-poppins drop-shadow-md">Desarrollador Web</h2>
-</div>
-
-<div class="flex flex-wrap justify-center gap-4 mb-8">
-  <a href="#contacto" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-bitcount shadow hover:bg-gray-200 transition">Contacto</a>
-  <a href="#proyectos" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-bitcount shadow hover:bg-gray-200 transition">Proyectos</a>
-  <a href="#habilidades" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-bitcount shadow hover:bg-gray-200 transition">Habilidades</a>
-  <a href="#experiencia" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-bitcount shadow hover:bg-gray-200 transition">Experiencia</a>
-</div>
-
-
-    <div id="contacto" class="mt-12">
-      <h3 class="text-black text-3xl mb-4 font-poppins">Contacto</h3>
-      <p class="text-black mb-2 font-poppins">Email: <a href="mailto:tono.fox@example.com" class="text-[#ffffff] hover:underline">tono.fox@example.com</a></p>
-      <p class="text-black mb-2 font-poppins">Teléfono: <a href="tel:+1234567890" class="text-[#ffffff] hover:underline">+1 234 567 890</a></p>
-      <p class="text-black mb-2 font-poppins">LinkedIn: <a href="https://www.linkedin.com/in/tono-fox" target="_blank" class="text-[#ffffff] hover:underline">linkedin.com/in/tono-fox</a></p>
-      <p class="text-black mb-2 font-poppins">GitHub: <a href="https://github.com/tono-fox" target="_blank" class="text-[#ffffff] hover:underline">github.com/tono-fox</a></p>
+    <div id="perfil" class="flex flex-col items-center p-8 bg-black/60 font-bitcount rounded-3xl shadow-2xl border border-white/30 animate-fadeIn">
+      <img src="./imagenes/yo.jpeg" alt="yo" class="w-44 h-44 rounded-full border-4 border-black shadow-xl mb-6 object-cover">
+      <h1 class="text-white text-6xl md:text-7xl font-bitcount mb-2 drop-shadow-lg">Toño Fox</h1>
+      <h2 class="text-white text-2xl md:text-3xl font-poppins drop-shadow-md">Desarrollador Web</h2>
     </div>
-    <p class="text-gray-200 text-sm mt-12 font-poppins">
-      &copy; 2025 Toño Fox. Todos los derechos reservados.
-    </p>
+
+    <div class="flex flex-wrap justify-center gap-4 mt-12 bg-black/60 font-bitcount rounded-3xl shadow-2xl border border-white/30 p-4 animate-fadeIn">
+      <a href="#contacto" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-bitcount shadow hover:bg-gray-200 transition">Contacto</a>
+      <a href="#proyectos" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-bitcount shadow hover:bg-gray-200 transition">Proyectos</a>
+      <a href="#habilidades" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-bitcount shadow hover:bg-gray-200 transition">Habilidades</a>
+      <a href="#experiencia" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-bitcount shadow hover:bg-gray-200 transition">Experiencia</a>
+    </div>
+
+    <hr class="border-t border-white/30 my-12 w-2/3 mx-auto">
+    <div class="max-w-3xl w-full text-left text-white bg-black/20 backdrop-blur-md rounded-3xl shadow-lg border border-white/20 p-6 animate-fadeIn">
+      <p class="mb-2">Soy un desarrollador web apasionado por crear experiencias digitales atractivas y funcionales. Con experiencia en HTML, CSS y JavaScript, me especializo en el desarrollo de sitios web responsivos y optimizados para SEO.</p>
+    </div>
+
+    <hr class="border-t border-white/30 my-12 w-2/3 mx-auto">
+    <div id="contacto" class="max-w-3xl w-full text-left bg-black/20 backdrop-blur-md rounded-3xl shadow-lg border border-white/20 p-6 animate-fadeIn">
+      <h3 class="text-white text-3xl mb-4 font-poppins border-b-2 border-white/30 inline-block pb-1">Contacto</h3>
+      <p class="text-white mb-2 font-poppins">Email: <a href="mailto:IngToñoMuypreparadoFox@gmail.com" class="hover:underline">IngToñoMuypreparadoFox@gmail.com</a></p>
+      <p class="text-white mb-2 font-poppins">Teléfono: <a href="tel:+1234567890" class="hover:underline">+1 234 567 890</a></p>
+      <p class="text-white mb-2 font-poppins">LinkedIn: <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1" target="_blank" class="hover:underline">linkedin.com/in/tono-fox</a></p>
+      <p class="text-white mb-2 font-poppins">GitHub: <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1" target="_blank" class="hover:underline">github.com/tono-fox</a></p>
+    </div>
+
+    <p class="text-gray-200 text-sm mt-12 font-poppins animate-fadeIn"> &copy; 2025 Toño Fox. Todos los derechos reservados.</p>
   </div>
 </body>
 </html>
