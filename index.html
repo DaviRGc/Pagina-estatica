@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Página Estática</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    .font-bitcount {
+      font-family: 'Bitcount Prop Single Ink', sans-serif;
+    }
+
+
+    .font-poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 font-poppins">
+  <div class="h-screen bg-gradient-to-t from-[#e30e0e] via-[#7a3e3e] to-[#1a1717] flex flex-col items-center justify-center text-center px-4">
+
+    <img src="./imagenes/yo.jpeg" alt="yo" class="w-40 h-40 rounded-full border-4 border-white shadow-lg mb-6 object-cover">
+
+    <!-- Nombre con Bitcount -->
+    <h1 class="text-white text-5xl font-bitcount mb-2">Toño Fox</h1>
+    <h2 class="text-white text-2xl mb-6 font-poppins">Desarrollador Web</h2>
+
+   
+    <a href="#contacto" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-semibold shadow hover:bg-gray-200 transition font-poppins">Contáctame</a>
+    <a href="#contacto" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-semibold shadow hover:bg-gray-200 transition font-poppins">Contáctame</a>
+    <a href="#contacto" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-semibold shadow hover:bg-gray-200 transition font-poppins">Contáctame</a>
+    <a href="#contacto" class="bg-white text-[#e30e0e] px-6 py-2 rounded-full font-semibold shadow hover:bg-gray-200 transition font-poppins">Contáctame</a>
+
+    <div id="contacto" class="mt-12">
+      <h3 class="text-black text-3xl mb-4 font-poppins">Contacto</h3>
+      <p class="text-black mb-2 font-poppins">Email: <a href="mailto:tono.fox@example.com" class="text-[#ffffff] hover:underline">tono.fox@example.com</a></p>
+      <p class="text-black mb-2 font-poppins">Teléfono: <a href="tel:+1234567890" class="text-[#ffffff] hover:underline">+1 234 567 890</a></p>
+      <p class="text-black mb-2 font-poppins">LinkedIn: <a href="https://www.linkedin.com/in/tono-fox" target="_blank" class="text-[#ffffff] hover:underline">linkedin.com/in/tono-fox</a></p>
+      <p class="text-black mb-2 font-poppins">GitHub: <a href="https://github.com/tono-fox" target="_blank" class="text-[#ffffff] hover:underline">github.com/tono-fox</a></p>
+    </div>
+    <p class="text-gray-200 text-sm mt-12 font-poppins">
+      &copy; 2025 Toño Fox. Todos los derechos reservados.
+    </p>
+  </div>
+</body>
+</html>
